@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task 6</title>
+</head>
+
+<body>
+	<script>
+
+		let a = +prompt("PLease, enter the length of side A of the triangle");
+		let b = +prompt("PLease, enter the length of side B of the triangle");
+		let c = +prompt("PLease, enter the length of side C of the triangle");
+
+		let p = (a + b + c) / 2;
+		let triangleArea = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+		if (a > 0 && b > 0 && c > 0) {
+			console.log("Triangle's area = " + triangleArea.toFixed(3));
+		} else {
+			console.log("Incorrect data!");
+		}
+
+
+		if (a * a + b * b === c * c || a * a + c * c === b * b || b * b + c * c === a * a) {
+			console.log("WoooW!! This is right triangle and it's area = " + triangleArea.toFixed(3));
+		}
+
+		/*
+		Єдине що я зтирив з сьогоднішнього рев'ю домашок - це перевірка на прямокутний трикутник,
+		по суті це те що якраз не встиг доробити, решта завдань були готові...
+		*/
+	</script>
+</body>
+
+</html>

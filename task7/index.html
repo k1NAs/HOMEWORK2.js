@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task 7</title>
+</head>
+
+<body>
+	<script>
+
+		let currentDate = new Date();
+		let currentHour = currentDate.getHours();
+
+
+		if (currentHour >= 23 || currentHour < 5) {
+			console.log("Доброї ночі!");
+		} else if (currentHour >= 5 && currentHour < 12) {
+			console.log("Доброго ранку!");
+		} else if (currentHour >= 12 && currentHour < 18) {
+			console.log("Доброго дня!");
+		} else if (currentHour >= 18 && currentHour < 23) {
+			console.log("Доброго вечора!");
+		}
+
+		switch (true) {
+			case currentHour >= 23 || currentHour < 5:
+				alert("Доброї ночі!");
+				break;
+			case currentHour >= 5 && currentHour < 12:
+				alert("Доброго ранку!");
+				break;
+			case currentHour >= 12 && currentHour < 18:
+				alert("Доброго дня!");
+				break;
+			case currentHour >= 18 && currentHour < 23:
+				alert("Доброго вечора!");
+				break;
+		}
+
+
+	</script>
+</body>

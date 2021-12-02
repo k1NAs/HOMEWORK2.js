@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task 3</title>
+</head>
+
+<body>
+	<script>
+		let newArr = [];
+
+		newArr.splice(0, 0, 123, "My Arrey", true, null);
+		console.log(newArr);
+
+		console.log(newArr.length);
+
+		let enterValue = prompt("Please, enter eny value!");
+		newArr.splice(4, 0, enterValue);
+		console.log(newArr[4]);
+
+		newArr.splice(0, 1);
+		console.log(newArr);
+
+	</script>
+</body>
+
+</html>
